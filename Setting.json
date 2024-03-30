@@ -50,14 +50,6 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "yaml.schemas": {
-    "file:///c%3A/Users/mhuma/.vscode/extensions/atlassian.atlascode-3.0.10/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
-  },
-  "atlascode.bitbucket.enabled": true,
-  "atlascode.jira.lastCreateSiteAndProject": {
-    "siteId": "",
-    "projectKey": ""
-  },
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
