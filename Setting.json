@@ -1,8 +1,8 @@
 {
-  "workbench.iconTheme": "helium-icon-theme",
-  "editor.fontSize": 16,
-  "editor.fontFamily": "'Cascadia Code', 'Fira Code'",
-  "editor.lineHeight": 25,
+  "editor.fontSize": 17,
+  "editor.fontFamily": "'Fira Code', 'monospace'",
+  "editor.fontWeight": 400,
+  "editor.lineHeight": 35,
   "editor.autoIndent": "full",
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.cursorStyle": "line",
@@ -10,19 +10,17 @@
   "editor.fontLigatures": true,
   "editor.formatOnType": false,
   "editor.formatOnSave": true,
-  "editor.letterSpacing": 0.3,
+  "editor.letterSpacing": 1,
   "editor.minimap.enabled": false,
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.suggestSelection": "first",
   "editor.tabCompletion": "on",
-  "editor.tabSize": 5,
+  "editor.tabSize": 6,
   "editor.wordWrap": "on",
   "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 1000,
   "search.showLineNumbers": true,
   "workbench.colorCustomizations": {},
-  "zenMode.centerLayout": false,
-  "workbench.colorTheme": "Winter is Coming (Dark Blue)",
   "powermode.presets": "flames",
   "powermode.enabled": true,
   "powermode.combo.counterEnabled": "hide",
@@ -50,6 +48,14 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "yaml.schemas": {
+    "file:///c%3A/Users/mhuma/.vscode/extensions/atlassian.atlascode-3.4.13/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+  },
+  "atlascode.bitbucket.enabled": true,
+  "atlascode.jira.lastCreateSiteAndProject": {
+    "siteId": "",
+    "projectKey": ""
+  },
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -64,5 +70,31 @@
     "slices": "redux-actions",
     "contexts": "pipe",
     "sample": "dist"
-  }
+  },
+  "atlascode.jira.enabled": true,
+  "workbench.colorTheme": "Photon High Contrast",
+  "git.autofetch": true,
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "chat.commandCenter.enabled": false,
+  "workbench.editor.pinnedTabsOnSeparateRow": true,
+  "zenMode.centerLayout": false,
+  "workbench.editor.doubleClickTabToToggleLock": true,
+  "workbench.settings.applyToAllProfiles": [],
+  "terminal.integrated.fontFamily": "\"JetBrainsMono Nerd Font\"",
+  "workbench.iconTheme": "helium-icon-theme",
+  "workbench.productIconTheme": "icons-carbon",
+  "animations.Enabled": true,
+  "vscode_custom_css.imports": [
+    "file:///C:/Users/mhuma/Documents/custom/vscode-script.js",
+    "file:///c:/Users/mhuma/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.7/dist/updateHandler.js"
+  ],
+  "animations.Install-Method": "Custom CSS and JS",
+  "workbench.tree.indent": 20,
+  "window.titleBarStyle": "native",
+  "explorer.compactFolders": false,
+  "friendly-ui.disableWorkbenchJs": true,
+  "friendly-ui.customCssPath": "C:\\Users\\mhuma\\Documents\\custom\\custom-vscode.css",
+  "friendly-ui.customJsPath": "C:\\Users\\mhuma\\Documents\\custom\\items-script.js"
 }
