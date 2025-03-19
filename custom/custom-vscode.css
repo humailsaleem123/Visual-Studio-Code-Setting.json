@@ -1,0 +1,792 @@
+/* Left sidebar */
+.sidebar .explorer-folders-view .editor-group,
+.sidebar .explorer-folders-view .explorer-item {
+  height: 30px !important;
+  line-height: 30px !important;
+  font-size: 17px !important;
+  font-family: "Fira Code", "monospace" !important;
+}
+.sidebar .explorer-folders-view .monaco-inputbox {
+  margin-top: 10px !important;
+}
+.sidebar .open-editors .editor-group,
+.sidebar .open-editors .open-editor {
+  line-height: 30px !important;
+}
+.sidebar .monaco-icon-label:before {
+  height: 30px !important;
+}
+.sidebar .scm-view .monaco-list-row {
+  line-height: 30px !important;
+}
+.sidebar .monaco-pane-view .pane > .pane-header > .title {
+  text-transform: none !important;
+}
+.sidebar
+  .customview-tree
+  .monaco-list
+  .monaco-list-row
+  .custom-view-tree-node-item {
+  height: 30px !important;
+  line-height: 30px !important;
+}
+
+/* styling tabs round tabs, no border, hover effect */
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container.active
+  > .title
+  .tabs-container
+  > .tab.active {
+  background-color: #35385a;
+  border-radius: 5px;
+  overflow: hidden;
+  &:hover {
+    background-color: #343258;
+  }
+}
+
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container.active
+  > .title
+  .tabs-container
+  > .tab {
+  background-color: #25273b;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-left: 5px;
+  &:hover {
+    background-color: #312f64;
+  }
+}
+
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container.active
+  > .title
+  .tabs-container
+  > .tab > .pinned {
+  margin-left: 10px;
+  margin-right: 5px;
+  background-color: #0011ff !important; /* Slightly different color for pinned tabs */
+}
+
+/* replacing account icon with custom logo in activity bar */
+.codicon-accounts-view-bar-icon:before {
+  content: "";
+  height: 25px;
+  width: 25px;
+  background: #343258;
+  border-radius: 50%;
+  background-image: url("/C:/Users/mhuma/Documents/custom/avatar.png");
+  background-size: contain;
+  border: solid 3px;
+}
+
+/* styling command palette ctrl+shift+p or ctrl+p */
+.quick-input-widget {
+  transform: translateY(-50%) !important;
+  top: 50% !important;
+  z-index: 100;
+  border: solid 2px #ffffff2d !important;
+  border-radius: 6px !important;
+  box-shadow: none !important;
+}
+
+/* hide top border from tabs  */
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container
+  > .title
+  .tabs-container
+  > .tab.selected.tab-border-top
+  > .tab-border-top-container {
+  display: none;
+}
+
+/* Code comment style */
+.mtk3 {
+  font-family: "Fira Code", "monospace" !important;
+  font-style: italic !important;
+  color: #008c7d !important;
+}
+
+/* *:not() {
+    border: none !important;
+} */
+
+/* Code canvas top shadow */
+.monaco-editor .scroll-decoration {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.75) !important;
+  top: -6px !important;
+}
+
+/* Match Text */
+.currentFindMatchInline {
+  background: #000 !important;
+}
+
+/* Side bar */
+.part.sidebar {
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.25);
+}
+
+/* .part.sidebar.right > div > div > div:nth-child(1) {
+    display: none !important;
+} */
+
+/* File Explorer Selected Item */
+
+/* .monaco-list.list_id_1 .monaco-list-row {
+  margin-top: 40px !important;
+  margin-bottom: 40px !important;
+  height: 40px !important;
+  padding-bottom: 10px !important;
+} */
+
+.monaco-list.list_id_1 .monaco-list-row.selected {
+  background-color: #4f5971 !important;
+  opacity: 1 !important;
+  border-top: 1px #727b90 solid;
+  border-bottom: 1px #727b90 solid;
+}
+
+/* Hide the ">" chevron icon */
+.codicon-tree-item-expanded:before {
+  display: none !important;
+}
+
+/* List item label name */
+/* .monaco-list.list_id_1 .monaco-list-row .monaco-tl-row,
+.monaco-list.list_id_1 .monaco-list-row .monaco-tl-contents {
+  height: 60px;
+  margin-bottom: 5px;
+} */
+
+.monaco-list.list_id_1 .monaco-list-row.selected .label-name {
+  color: #b2acff !important;
+  opacity: 1 !important;
+}
+
+/* File explorer action buttons */
+/* .monaco-workbench .part.sidebar .title-actions .actions-container {
+  display: none;
+} */
+
+/* File Explorer Item Label */
+.monaco-tree .monaco-tree-row .label-name,
+.monaco-list .monaco-list-row .monaco-icon-label .label-name {
+  font-family: "Fira Code", "monospace" !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  color: #fff !important;
+}
+
+/* .monaco-tree .monaco-tree-row .label-name {
+  height: 70px !important;
+  line-height: 70px !important;
+  padding-top: 3px !important;
+  padding-bottom: 3px !important;
+  margin-top: 2px !important;
+  margin-bottom: 2px !important;
+} */
+
+/* ------------ Title Bar ------------ */
+.monaco-workbench .part.titlebar {
+  border-bottom: 1px solid #181c20 !important;
+}
+
+.monaco-workbench
+  .part.titlebar
+  > .titlebar-container
+  > .titlebar-center
+  > .window-title {
+  font-size: 14px !important;
+}
+
+/* ------------ Command Center ------------ */
+.monaco-workbench
+  .part.titlebar
+  > .titlebar-container
+  > .titlebar-center
+  > .window-title
+  > .command-center.hide {
+  visibility: visible !important;
+}
+
+.monaco-workbench
+  .part.titlebar
+  > .titlebar-container
+  > .titlebar-center
+  > .window-title
+  > .command-center
+  > .monaco-toolbar
+  > .monaco-action-bar
+  > .actions-container
+  > .action-item:not(:has(.monaco-toolbar)) {
+  display: none !important;
+}
+
+/* ------------ Activity Bar ------------ */
+.monaco-workbench .activitybar > .content {
+  justify-content: center;
+}
+
+.monaco-workbench .activitybar > .content > .composite-bar {
+  margin-bottom: inherit;
+}
+
+.monaco-workbench
+  .activitybar
+  > .content
+  :not(.monaco-menu)
+  > .monaco-action-bar
+  .action-label.codicon {
+  border-radius: 12px !important;
+}
+
+.monaco-workbench
+  .activitybar
+  > .content
+  :not(.monaco-menu)
+  > .monaco-action-bar
+  .action-item.checked
+  .active-item-indicator:before {
+  border-left-color: transparent !important;
+}
+
+.monaco-workbench
+  .activitybar
+  > .content
+  :not(.monaco-menu)
+  > .monaco-action-bar
+  .action-item {
+  background: var(--vscode-editor-lineHighlightBackground) !important;
+  border-radius: 12px;
+  margin-bottom: 4px;
+  width: 36px;
+  height: 36px;
+  margin-left: 4px;
+}
+
+div#workbench\.parts\.activitybar {
+  background-color: var(--vscode-editorWidget-background) !important;
+}
+
+li.action-item.icon {
+  border: 2px solid transparent;
+}
+
+li.action-item.icon:hover {
+  border: 2px solid var(--vscode-icon-foreground);
+}
+
+li.action-item.icon.checked:hover .codicon:before {
+  color: var(--vscode-activityBar-activeBorder) !important;
+}
+
+li.action-item.icon.checked {
+  border: 2px solid var(--vscode-activityBar-activeBorder);
+}
+
+li.action-item.icon.checked a.action-label.codicon {
+  color: var(--vscode-activityBar-activeBorder) !important;
+  border-radius: 12px !important;
+}
+
+.monaco-workbench
+  .activitybar
+  > .content
+  :not(.monaco-menu)
+  > .monaco-action-bar
+  .action-label.codicon,
+.monaco-workbench
+  .activitybar
+  > .content
+  :not(.monaco-menu)
+  > .monaco-action-bar
+  .action-label:not(.codicon) {
+  width: 36px !important;
+  height: 36px !important;
+}
+
+.monaco-workbench
+  .activitybar
+  > .content
+  :not(.monaco-menu)
+  > .monaco-action-bar
+  .action-label:not(.codicon) {
+  padding: 0;
+}
+
+.monaco-workbench
+  .activitybar
+  > .content
+  :not(.monaco-menu)
+  > .monaco-action-bar
+  .action-label:not(.codicon):hover {
+  background-color: var(--vscode-input-foreground) !important;
+}
+
+.monaco-workbench
+  .activitybar
+  > .content
+  :not(.monaco-menu)
+  > .monaco-action-bar
+  .action-item:focus
+  .active-item-indicator:before {
+  border-left-color: transparent !important;
+}
+
+.monaco-workbench
+  .activitybar
+  > .content
+  :not(.monaco-menu)
+  > .monaco-action-bar
+  .badge
+  .badge-content {
+  position: absolute;
+  top: 16px;
+  right: 4px;
+}
+
+/* ------------ Sidebar ------------ */
+.monaco-workbench .part > .composite.title > .title-actions {
+  padding-left: 0;
+  margin-left: -20px;
+}
+
+.monaco-workbench .part.sidebar .title-actions .action-item {
+  margin-right: 0;
+}
+
+.monaco-list.mouse-support .monaco-list-row {
+  border-radius: 6px;
+  width: calc(100% - 8px);
+  padding-right: 4px !important;
+  padding-left: 0 !important;
+  margin-left: 4px !important;
+}
+
+.show-file-icons .folder-icon::before,
+.show-file-icons .rootfolder-icon::before {
+  filter: brightness(0.6);
+}
+
+.monaco-workbench .monaco-list:not(.element-focused):focus:before,
+.part.sidebar .monaco-list.mouse-support.selection-none.last-focused::before,
+.part.sidebar .welcome-view-content:focus {
+  outline-color: transparent !important;
+}
+/* 
+.monaco-workbench .codicon[class*=codicon-] {
+    opacity: 0 !important;
+} */
+
+.explorer-folders-view .monaco-list-row {
+  padding-left: 10px !important;
+}
+
+/* .monaco-list.list_id_1 .monaco-tl-indent > .indent-guide.active {
+    border: none !important;
+}
+
+.monaco-list.list_id_1 .monaco-tl-indent > .indent-guide.active:hover {
+    border: none !important;
+} */
+
+/* Sidebar top shadow */
+.monaco-scrollable-element > .shadow.top {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75) !important;
+  top: -3px !important;
+}
+
+/* Sidebar title */
+.composite.title {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-items: center !important;
+}
+.composite.title h2 {
+  font-weight: bold !important;
+  font-size: 12px !important;
+  text-transform: uppercase;
+  color: #bc9abc !important;
+}
+
+.composite.title h2::before {
+  display: inline-block;
+  margin-right: 6px;
+  font-size: 1.1rem;
+  content: "";
+}
+
+/* Scroll Bar */
+
+/* styling vertical scrollbars  */
+.scrollbar.vertical .slider {
+  position: absolute !important;
+  right: 5px !important;
+  width: 10px !important;
+  background: #343a51 !important;
+  left: auto !important;
+  border-radius: 3px;
+  &:hover {
+    background: #98a1ff !important;
+    box-shadow: 0 0 15px #6c84eed0;
+  }
+}
+
+/* styling horizontal scrollbar  */
+.scrollbar.horizontal .slider {
+  position: absolute !important;
+  bottom: 0px !important;
+  height: 6px !important;
+  background: #343a51 !important;
+  top: auto !important;
+  border-radius: 3px;
+  &:hover {
+    background: #98a1ff !important;
+    box-shadow: 0 0 15px #6c84eed0;
+  }
+}
+
+/* hiding action buttons on sidebar next to activity bar */
+/* .monaco-workbench .part.sidebar .title-actions .actions-container {
+  width: 30px;
+  overflow: hidden;
+  &:hover {
+    width: auto;
+  }
+} */
+
+/* Tooltip box style */
+.monaco-editor-hover,
+.monaco-hover {
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  /* padding: 10px !important; */
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  backdrop-filter: blur(3px) !important;
+  border-radius: 16px !important;
+  border: none !important;
+  outline: 0px !important;
+}
+
+.monaco-resizable-hover {
+  border: none !important;
+}
+
+.monaco-hover > div,
+.monaco-editor-hover > div {
+  padding: 10px !important;
+  width: 600px !important;
+}
+
+/* Project title's style at the top. */
+.monaco-workbench
+  .part.titlebar
+  > .titlebar-container
+  > .titlebar-center
+  > .window-title
+  > .command-center
+  .action-item.command-center-center {
+  border: none !important;
+  background: transparent !important;
+}
+
+/* Project Title */
+.titlebar-left {
+  justify-content: flex-end !important;
+  flex-grow: 0 !important;
+  width: 75px !important;
+}
+
+/* Search Label */
+.search-label {
+  font-family: "Fira Code", "monospace" !important;
+  font-size: 14px !important;
+  color: #fff;
+  display: block;
+}
+
+/* Search icon */
+.search-icon {
+  display: none !important;
+}
+
+.codicon-search::before {
+  display: none !important;
+}
+
+.codicon-arrow-right,
+.codicon-arrow-left {
+  display: none !important;
+}
+
+.titlebar-right > * {
+  display: none !important;
+}
+
+.command-center-center {
+  width: auto !important;
+}
+
+/* Command Palette */
+.quick-input-widget {
+  transform: translateY(-50%) !important;
+  top: 50% !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.35) !important;
+  /* border: 4px solid rgba(24, 135, 129, .35) !important; */
+  padding: 10px 10px 18px 10px !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  /* background: #3c3c50 !important; */
+  backdrop-filter: blur(3px) !important;
+  border-radius: 20px !important;
+  /* width: 50% !important; */
+}
+
+.quick-input-list,
+.quick-input-list .list_id_6 {
+  min-height: 400px !important;
+}
+
+.quick-input-widget::backdrop {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.15);
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(8px);
+}
+
+/* Remove background for lists */
+.monaco-list-rows {
+  background: transparent !important;
+}
+
+/* Command palette text input */
+.quick-input-filter .monaco-inputbox {
+  border-radius: 12px !important;
+  padding: 16px !important;
+  border: none !important;
+  /* background-color: rgba(34, 34, 34, .40) !important; */
+  font-family: "Fira Code", "monospace" !important;
+  font-size: 16px !important;
+  margin-bottom: 16px !important;
+}
+
+#command-blur {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.15);
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(8px);
+}
+
+/* Command palette's input box placeholder. */
+.monaco-inputbox input::placeholder {
+  color: rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Container that holds the VS Code home icon. */
+.editor-group-watermark {
+  max-width: none !important;
+}
+
+/* replacing vscode icon from no active tab background with html 5 looking svg art along with other symbols */
+.letterpress {
+  background-image: url("/C:/Users/mhuma/Documents/custom/art.svg") !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: contain !important;
+  width: 60% !important;
+  mask-image: url("/C:/Users/mhuma/Documents/custom/mask.png");
+  mask-size: contain;
+  mask-position: center;
+  mask-repeat: no-repeat;
+}
+
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container
+  > .editor-group-watermark {
+  max-width: 100% !important;
+}
+
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container
+  > .editor-group-watermark
+  .shortcuts {
+  display: none;
+}
+
+/* ------------ Editor Screen ------------ */
+.monaco-editor .peekview-widget .head .peekview-title {
+  flex: 5 !important;
+}
+
+.line-numbers {
+  transform: scale(1);
+  transition: all 10 linear;
+}
+
+.line-numbers.active-line-number {
+  transform: scale(1.25) translateX(-3px);
+  animation: 0.2s ease-out scaleSize;
+}
+
+@keyframes scaleSize {
+  0% {
+    transform: scale(0.75);
+  }
+
+  100% {
+    transform: scale(1.35) translateX(-3px);
+  }
+}
+
+/* ------------ Command Palette ------------ */
+.quick-input-titlebar {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* .quick-input-widget {
+  background-color: var(--vscode-quickInput-background) !important;
+  border-radius: 14px !important;
+  min-height: 58px !important;
+  box-shadow: 0px 2px 10px 4px var(--vscode-widget-shadow) !important;
+}
+
+.quick-input-widget.show-file-icons {
+  top: 25% !important;
+  padding-bottom: 4px;
+} */
+
+/* .quick-input-list {
+  padding: 0px 2px 0px 2px;
+  margin-top: 0;
+} */
+
+.quick-input-list [class^="monaco-list list_id"] .monaco-list-rows {
+  background: var(--vscode-quickInput-background) !important;
+}
+
+.quick-input-list
+  .monaco-list:not(.drop-target):not(.dragging)
+  .monaco-list-row:hover:not(.selected):not(.focused) {
+  background-color: var(--vscode-quickInputList-focusBackground) !important;
+}
+
+.quick-input-list [class^="monaco-list list_id"] .monaco-list-row.focused {
+  background-color: var(--vscode-quickInputList-focusBackground) !important;
+}
+
+/* .quick-input-list .quick-input-list-entry {
+  padding: 0 2px;
+  border-top-color: var(--vscode-quickInputList-focusBackground) !important;
+} */
+
+.monaco-workbench .synthetic-focus {
+  outline: var(--vscode-quickInput-background) !important;
+}
+
+/* .quick-input-and-message .monaco-inputbox > .ibwrapper {
+  background: var(--vscode-quickInput-background) !important;
+  border-color: var(--vscode-quickInput-background) !important;
+  border-width: 0 !important;
+  width: calc(100% - 3px * 2);
+  padding: 3px;
+} */
+
+.quick-input-widget.show-checkboxes .quick-input-box,
+.quick-input-widget.show-checkboxes .quick-input-message {
+  margin-left: 0 !important;
+}
+
+.quick-input-and-message .monaco-inputbox.idle {
+  border-color: var(--vscode-quickInput-background) !important;
+  background-color: var(--vscode-quickInput-background) !important;
+}
+
+.quick-input-and-message .monaco-inputbox > .ibwrapper > .input {
+  border-radius: 8px !important;
+  padding: 12px;
+  background-color: var(--vscode-quickInput-background) !important;
+  border: 1px solid var(--vscode-quickInputList-focusBackground);
+  margin-top: -3px;
+}
+
+.quick-input-list .monaco-list-row {
+  border-radius: 4px;
+}
+
+.quick-input-list .quick-input-list-entry-action-bar .action-label.codicon {
+  margin-right: 0;
+}
+
+.quick-input-action {
+  display: flex;
+  align-items: center;
+  margin-left: 2px;
+}
+
+.quick-input-count {
+  right: 14px;
+}
+
+/* ------------ Find Widget ------------ */
+.monaco-editor .find-widget {
+  border-radius: 4px;
+  padding-top: 1px !important;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.15);
+  top: 3px !important;
+}
+
+.monaco-editor .find-widget .monaco-sash {
+  display: none;
+}
+
+.monaco-editor .find-widget .button.toggle {
+  left: 2px;
+  outline: none !important;
+}
+
+.monaco-editor .find-widget .button.toggle:hover {
+  background-color: var(--vscode-editorWidget-background) !important;
+}
+
+/* ------------ Notifications ------------ */
+.notifications-list-container .monaco-list.mouse-support .monaco-list-row {
+  border-radius: 0;
+  width: 100%;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+/* ------------ Terminal ------------ */
+.monaco-workbench
+  .pane-body.integrated-terminal
+  .terminal-tabs-entry.is-active:before {
+  display: block;
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 0;
+}
